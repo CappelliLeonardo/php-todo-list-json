@@ -1,0 +1,18 @@
+[
+    {
+        "task": "robot building",
+        "completed": true
+    },
+    {
+        "task": "go shopping",
+        "completed": false
+    },
+    {
+        "task": "gas drinking",
+        "completed": true
+    },
+    {
+        "task": "web programming",
+        "completed": false
+    }
+]

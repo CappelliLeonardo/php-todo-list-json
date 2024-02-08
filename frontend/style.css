@@ -10,3 +10,7 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.decoration{
+    text-decoration: line-through green 2px;
+}

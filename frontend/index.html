@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Template HTML CSS Vue</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="app">
+            <h1>
+                Todolist
+            </h1>
+            <ul>
+                <li v-for="elem in ToDo">
+                    <span :class="{
+                        'decoration':elem.completed == true
+                    }">
+                        {{ elem.task}}
+
+                    </span>
+                </li>
+            </ul>   
+        </div>
+        <!-- Importazione Vue -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <!-- AXIOS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"
+        integrity="sha512-TjBzDQIDnc6pWyeM1bhMnDxtWH0QpOXMcVooglXrali/Tj7W569/wd4E8EDjk1CwOAOPSJon1VfcEt1BI4xIrA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Mio Script -->
+        <script src="js/scripts.js" type="text/javascript"></script>
+    </body>
+</html>
