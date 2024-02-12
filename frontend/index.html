@@ -13,6 +13,10 @@
             <h1>
                 Todolist
             </h1>
+            <div>
+                <input type="text" v-model="newTodo">
+                <button @click="addTodo()">Aggiungi</button>
+            </div>
             <ul>
                 <li v-for="elem in ToDo">
                     <span :class="{

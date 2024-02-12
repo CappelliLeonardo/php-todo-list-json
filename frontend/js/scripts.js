@@ -6,6 +6,7 @@ createApp({
     data() {
         return {
             ToDo: [],
+            newTodo:''
         };
     },
     mounted() {
@@ -15,6 +16,16 @@ createApp({
             .then((res) => {
                 this.ToDo = res.data;
             });
+    },
+    methods:{
+        addTodo(){
+            this.ToDo.push({
+                task: this.newTodo,
+                completed: false
+            });
+
+            this.newTodo = '';
+        }
     }
   // Monto l'istanza di Vue in pagina
 }).mount('#app');
