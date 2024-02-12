@@ -1,18 +1,1 @@
-[
-    {
-        "task": "robot building",
-        "completed": true
-    },
-    {
-        "task": "go shopping",
-        "completed": false
-    },
-    {
-        "task": "gas drinking",
-        "completed": true
-    },
-    {
-        "task": "web programming",
-        "completed": false
-    }
-]
+[{"task":"robot building","completed":true},{"task":"go shopping","completed":false},{"task":"gas drinking","completed":true},{"task":"web programming","completed":false},{"task":"leonardo","completed":false},{"task":"ciao","completed":false},{"task":"ciao2","completed":false},{"task":null,"completed":false},{"task":null,"completed":false}]
