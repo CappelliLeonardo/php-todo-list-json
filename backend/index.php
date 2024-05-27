@@ -24,9 +24,22 @@ $jsonContent = file_get_contents('db.json');
 //     }
 // }
 
-// Dico al client che la risposta contiene un json
-header('Content-Type: application/json');
+// Permetti l'accesso da qualsiasi origine
+header("Access-Control-Allow-Origin: *");
 
+// Permetti specifici metodi HTTP
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
+
+// Permetti specifiche intestazioni
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+
+// Il tuo codice esistente qui
+
+// Rispondi alla richiesta preflight OPTIONS
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+    // Ritorna solo le intestazioni e non il contenuto
+    exit(0);
+}
 // Rispondo con il json preso dal file
 echo $jsonContent;
 ?>
